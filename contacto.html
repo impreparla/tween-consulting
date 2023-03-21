@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Contacta con Twin Consulting, márketing digital y comercio electrónico para empresas</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- fuentes -->
+	<link rel="stylesheet" href="fuentes/stylesheet.css">
+
+	<!-- reseteo de estilos -->
+	<link rel="stylesheet" href="css/normalize.css">
+
+	<!-- estilos css propios -->
+	<link rel="stylesheet" href="css/estilos.css">
+
+	<!-- css contacto y formulario -->
+	<link rel="stylesheet" href="css/contacto-formulario.css">
+
+	<!-- mediaqueries -->
+	<link rel="stylesheet" href="css/mediaqueries.css">
+ 
+</head>
+<body>
+	 
+
+		 <!-- header -->
+		<header class="header-principal">
+			<div class="Personaje"></div>
+			
+			<!-- parte superior del header -->
+			<div class="header-top">
+				
+				<div class="anchoMaximo grid auto">
+					<div id="logo">
+						<img src="imagenes/logotipo.png" alt="logotipo Twin Consulting">
+					</div>
+					
+					<!-- menu navegación -->
+					<nav class="navegacion-principal">
+						<ul class="grid auto">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">De dónde venimos</a></li>
+							<li><a href="#">Casos de éxito</a></li>
+							<li><a href="#">Servicios</a></li>
+							<li><a href="#">Filosofía de trabajo</a></li>
+							<li><a href="#">Organigrama</a></li>
+							<li><a href="contacto.html">Contacto</a></li>
+						</ul>
+					</nav>
+
+					<img class="botonMenu" src="imagenes/boton-menu.png" alt="abrir menu">
+					<!-- fin navegación -->
+				</div>
+				 
+			</div> <!-- fin parte superior del header -->
+
+			<!-- parte inferior del header -->
+			<div class="header-bottom">
+					<div class="anchoMaximo grid">
+						<h1>Ideas para el Márketing Digital</h1>
+						<p>El ámbito digital abre a las empresas un espacio común con los consumidores en el que poder comunicar, promocionar y vender sus productos.</p>
+					</div>
+			</div>	 <!-- parte inferior del header -->
+
+		</header> <!--  fin header -->
+
+		<main>
+		<!--Información principal de la página-->
+
+			<!-- Sección datos de contacto y mapa-->
+		  <section class="datosContacto productos anchoMaximo">
+			<h2>Contacta con nosotros</h2>
+			
+			<!-- Información de contacto-->
+			<div class="grid">	
+ 
+				<address class="FormaCaja"> 
+					<p><b>Por teléfono:</b></p>  
+					<p>91 400 40 38</p>
+
+					<hr>
+
+					<p><b>Por correo electrónico:</b></p>  
+					<p><a href="mailto:info@twinconsulting.es">info@twinconsulting.es</a></p>
+
+					<hr>
+
+					<p><b>En nuestras oficinas:</b></p>  
+					<p><strong>Torre Europa.</strong> Paseo de la Castellana, 95, Planta 10. A. Madrid</p>
+					<p><strong><abbr title="Código Postal">C.P.</abbr></strong> 28046</p>
+				</address>
+    	 
+
+			 	<div class="mapa">
+					 <!-- Mapa-->
+			 
+					<iframe class="FormaCaja" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.069925574596!2d-3.6938251842610534!3d40.451589279360995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228e2e75297e9%3A0xb9f8990b662bb618!2sPaseo+de+la+Castellana%2C+95%2C+28046+Madrid!5e0!3m2!1ses!2ses!4v1496228812322"   allowfullscreen></iframe>
+			 	</div> <!-- Fin columna -->
+ 
+			</div> <!-- Fin Fila -->
+
+		   
+		  </section> <!-- Fin sección datos de contacto-->
+	 
+			<!-- Sección formulario de contacto-->
+		  <section class="Formulario productos anchoMaximo">
+		   <h2>Consúltanos cualquier duda, estamos a tu disposición.</h2>
+		   <p>Envíanos tu consulta a través de este formulario.</p>
+		   <p><small>* Todos los campos son obligatorios.</small></p>
+
+
+			<div class="Fila">
+			  
+				<div class="">
+					<!-- formulario de contacto-->
+					<form action="http://cgi.twinconsulting.es/FormMail.pl"  method="post" name="form-contacto"  id="form-contacto">
+					
+					 
+						 
+						 <!-- bloque de campos en 2 columnas -->
+						<div class="bloque-campos grid">
+							
+							<div class="campos">
+								<label for="nombre-empresa">Empresa:</label>
+
+								<input type="text" name="nombre-empresa" id="nombre-empresa" 
+								required placeholder="Nombre empresa"
+								class="FormaCaja">
+							</div>
+
+
+							<div class="campos">
+								<label for="nombre-usuario">Nombre:</label>
+
+								<input type="text" name="nombre-usuario" id="nombre-usuario" 
+								required placeholder="Tu nombre"
+								class="FormaCaja">
+							</div>
+
+						 </div>  <!-- fin bloque de campos en 2 columnas --> 
+
+						 <!-- bloque de campos en 2 columnas --> 
+						<div class="bloque-campos grid">
+							<div class="campos">
+								<label for="dato-email">Email:</label>
+
+								<input type="email" name="dato-email" id="dato-email" 
+								required placeholder="nombre@dominio"
+								class="FormaCaja">
+							</div>
+
+							<div class="campos">
+								<label for="dato-telefono">Teléfono:</label>
+
+								<input type="tel" 
+								name="dato-telefono" 
+								id="dato-telefono" 
+								required  
+								pattern="[0-9]{9,14}" 
+								placeholder="666555444" title="El teléfono debe contener entre 9 y 14 cifras, no siendo válidos otros caracteres"
+								maxlength="14"
+								class="FormaCaja">
+							</div>
+						</div>	 <!-- fin bloque de campos en 2 columnas --> 
+
+						<div class="campos">
+							<fieldset>
+								<legend>¿Cómo nos has conocido?	</legend>
+								
+				  				<!-- Opcion 1 -->	
+								<div class="radio">
+									 <input type="radio" 
+									 	    name="conocido"
+									 	    id="conocido-internet"
+									 	    value="internet"> 
+
+								 	<label for="conocido-internet"> 
+								 	   Búsqueda en Internet
+								 	</label>
+								</div>
+								
+								<!-- Opcion 2 -->
+								<div class="radio">
+									
+									 <input type="radio" 
+									 	    name="conocido"
+									 	    id="conocido-contacto"
+									 	    value="contacto"> 
+
+								 	<label for="conocido-contacto"> 
+								 	   A través de un contacto
+								 	</label>
+								</div>
+								
+								<!-- Opcion 3 -->	
+								<div class="radio">
+									
+									 <input type="radio" 
+									 	    name="conocido"
+									 	    id="conocido-otros"
+									 	    value="otros"> 
+
+								 	<label for="conocido-otros"> 
+								 	   Otros
+								 	</label>
+								</div>
+		
+							 		
+
+							</fieldset>
+
+
+						</div>
+
+
+						<div class="campos">
+							<label for="dato-consulta">
+								Consulta:
+							</label> <br>
+
+							<textarea name="dato-consulta" id="dato-consulta" cols="30" rows="10" placeholder="Tu consulta" class="FormaCaja"></textarea>
+						</div>
+
+						<div class="campos"> 
+							 <input type="checkbox" name="dato-acepto-clausulas" id="dato-acepto-clausulas" value="1" required>
+							 <label for="dato-acepto-clausulas">
+								 Acepto las clausulas de protección de datos de carácter personal.
+							 </label>
+							 <a href="#">Leer clausulas de protección de datos</a> 
+						</div>
+
+						<!-- Enlace para leer clausular -->	
+						
+						
+						<!-- Botón de enviar formulario -->
+						<div class="campos">						 
+							 <input type="submit" value="Enviar formulario">
+						</div>
+					</form> <!-- FIN Formulario -->
+					 
+				</div> <!-- FIN Columna -->
+			</div><!-- FIN Fila -->
+				
+		  </section> <!-- FIN sección -->
+
+		</main> <!-- Fin Información principal de la página-->
+
+		<!-- footer -->	
+		<footer class="footerPrincipal">
+
+			<div class="anchoMaximo grid">
+					<!-- mensaje y copyright -->
+					<div class="footer-mensaje">
+						<img src="imagenes/logotipo-footer.png" alt="logotipo Twin Consulting">
+
+						<p>
+							Aportamos soluciones personalizadas e innovadoras para diferenciar a nuestros clientes del resto de sus competidores. Todos los presupuestos y propuestas de marketing están hechas a medida acorde a las necesidades de los clientes.
+						</p>
+
+						<p>
+							<small>
+								©<strong>Twin Consulting</strong> - Todos los derechos reservados
+							</small>
+						</p>
+					</div> <!-- fin mensaje y copyright -->
+
+					<!-- enlaces a redes sociales -->
+					
+
+					<ul class="footer-redes grid auto">
+						<li>
+							<a href="#"><img src="imagenes/logo-facebook.png" alt="Facebook de Twin Consulting"></a>
+						</li>
+
+						<li>
+							<a href="#"><img src="imagenes/logo-twitter.png" alt="Twitter de Twin Consulting"></a>
+						</li>
+
+						<li>
+							<a href="#"><img src="imagenes/logo-linkedink.png" alt="LinkedIn de Twin Consulting"></a>
+						</li>
+					</ul>
+			</div>
+ 
+
+		</footer> <!-- fin footer -->
+
+	 
+
+</body>
+</html>
