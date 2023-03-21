@@ -1,0 +1,235 @@
+/*estilos generales*/
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: cooper_hewittbook, Arial, Helvetica,sans-serif;
+}
+
+
+ul, p, h1, h2, h3{
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+    font-family: cooper_hewittbold, Arial, Helvetica, sans-serif;
+}
+
+h2, h3{
+	font-family: cooper_hewittsemibold, Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+
+p{
+	line-height: 1.4em;
+}
+ 
+li{
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+.anchoMaximo{
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 0 50px;
+}
+
+/* ****************************** */
+/* estructura*/
+/* ****************************** */
+
+.grid{
+	display: grid;
+	justify-content: space-between;
+}
+
+.grid.auto{
+	grid-auto-flow: column;
+}
+
+/* ****************************** */
+/* header y navegación principal*/
+/* ****************************** */
+
+.header-principal{
+	position: relative; /*para que sea el el elemento de referencia el personaje con la bombilla*/
+
+	background: #97C11F;
+	border-bottom: 8px solid #F2F2F2;
+}
+
+.header-principal h1{
+	margin-bottom: 20px;
+}
+
+.Personaje{
+	position: absolute;
+	width: 179px;
+	height: 300px;
+	top: 65px;
+	right: 60px;
+	background: url('../imagenes/personaje-bombilla.png') no-repeat;
+}
+
+/*parte superior del header*/
+.header-top{
+	background: #333;
+}
+
+.header-top > .grid{
+	min-height: 100px;
+	align-content: center;
+}
+
+#logo{
+	width: 200px;
+}
+
+/*Navegación*/
+.navegacion-principal > .grid{
+     height: 100%;
+	 align-content: center;
+	 column-gap: 18px;
+}
+ 
+.navegacion-principal a{
+	color: #E6E6E6;
+	font-size: 0.9em;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+nav a:hover{
+	color: #97C11F;
+	 
+}
+
+.botonMenu{
+	display: none;
+	cursor: pointer;
+}
+
+/*parte inferior del header*/
+ 
+
+.header-bottom > .grid{
+	min-height: 220px;
+	align-content: center;
+}
+
+.header-bottom h1{
+	color: #FFF;
+	font-size: 2.5em;
+}
+
+.header-bottom p{
+	width: 65%;
+	color: #FFF;
+	font-family: cooper_hewittsemibold, Arial, Helvetica, sans-serif;
+	font-size: 1.3em;
+}
+
+ 
+
+/* ****************************** */
+/* secciones*/
+/* ****************************** */
+.productos {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.productos > .grid{
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 50px;
+}
+
+.productos:not(:first-of-type){ /*la linea aparecería en la parte superior de todas las <section> menos en la primera*/
+	border-top: 3px dotted #D6D6D6;
+}
+
+.productos h2{
+	margin-bottom: 30px;
+	text-align: center;
+	color: #6B6B69;
+	font-size: 2.3em;
+}
+
+.productos h3{
+	color: #97C11F;
+	margin-bottom: 15px;
+}
+
+.productos h3, .FormaCaja{
+	padding: 1em;
+	background: #FFF;
+	border: 1px solid #E4E4E4;
+  
+	border-radius: 20px 0;
+ 
+	box-shadow: 2px 2px 2px #DEDEDE;
+	font-size: 1em;
+}
+
+.productos p{
+	color:#737373;
+
+}
+
+ 
+
+/* ****************************** */
+/* footer*/
+/* ****************************** */
+
+.footerPrincipal{
+	padding: 30px 0;
+	background: #333;
+	border-top: 8px solid #F2F2F2;
+}
+
+.footerPrincipal > .grid{
+	min-height: 180px;
+	align-content: center;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 80px;
+}
+
+footer p{
+	line-height: 1.4em;
+	font-size: 0.9em;
+	margin-bottom: 1.5em;
+}	
+
+.footer-redes.grid{
+	align-content: center;
+	justify-content: end;
+	column-gap: 25px;
+}
+
+
+.footer-mensaje{
+	color: #C0C0C0;
+}
+
+ 
+.footer-redes img{
+	width: 75px;
+}
+
+ 
+
+
+
+ 
+
+
+
+
+

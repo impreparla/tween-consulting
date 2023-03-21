@@ -1,0 +1,162 @@
+
+/* ****************************** */
+/* contacto y formulario*/
+/* ****************************** */
+
+/*secction datos contacto*/
+
+.datosContacto > .grid{
+    grid-template-columns: 1fr 1fr;
+}
+
+.mapa iframe{
+    height: 100%;
+    width: 100%;
+}
+
+address{
+	font-style: normal;
+}
+
+
+address b{
+	 font-family: cooper_hewittsemibold, Arial, Helvetica, sans-serif;
+	 font-size: 1.1em;
+}
+
+address abbr{
+	 text-decoration: none;
+}
+
+
+address a{
+	  text-decoration: none;
+	  color: #737373;
+}
+address a:hover{
+	  color: #97C11F;
+}
+
+/*seccion formulario*/
+.Formulario{
+	text-align: center;
+}
+
+.Formulario h1+p{
+	font-size: 1.5em;
+	margin: 0;
+}
+
+.Formulario h1+p+p{
+ 	margin: 0;
+ 	color: #DF3636;
+ 	font-size: 1.2em;
+	
+}
+
+form{
+	margin-top: 40px;
+	text-align: left;
+}
+
+form a{
+	display: block;
+	margin: 0.5em 0 0 1.5em;
+	font-size: 0.9em;
+	color: #2874E6;
+}
+
+form a:hover{
+	color: #97C11F;
+}
+
+
+label, legend{
+	color: #707070;
+    font-family: cooper_hewittsemibold, Arial, Helvetica, sans-serif;
+}
+
+input[type="radio"] + label, input[type="checkbox"] + label  {
+	margin-right: 1.5em;
+	font-weight: normal;
+	font-size: 0.9em;
+}
+
+input[type="checkbox"],input[type="radio"]{
+	margin-right: 0.1em;
+	box-shadow: none;
+}
+
+.radio{
+	display: inline-block;
+}
+ 
+
+::placeholder{
+    color: #B1B1B1;
+}
+ 
+
+fieldset{
+	border:none;
+	margin: 0.5em 0 2em;
+	padding: 0;
+}
+
+
+legend{
+	margin-bottom: 1em;
+}
+
+.Formulario h1{
+	font-size: 1.5em;
+}
+
+ 
+.bloque-campos.grid{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+}
+
+ 
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea{
+  	width: 100%;
+  	margin: 0.7em 0 2em;
+  	outline: none;
+ }
+
+
+ input[type="submit"]{
+ 	width: 100%;
+ 	margin: 2em 0 1em 0;
+ 	padding: 1em;
+ 	border: 1px solid #DEDEDE;
+ 
+ 	border-radius: 10px;	
+ 	background: #858585;
+ 	color: #FFF;
+ 	font-size: 1.3em;
+ 	cursor: pointer;
+ }
+
+
+ input[type="submit"]:hover{
+ 	background: #97C11F;
+ }
+
+ /* ********************************* */
+/* mediaqueries para formularios*/
+/* ********************************* */
+ 
+/* punto ruptura 650px */
+@media screen and (max-width: 650px) {
+    .bloque-campos.grid{
+        grid-template-columns: 1fr;
+    } 
+    
+}
+
