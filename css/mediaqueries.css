@@ -1,0 +1,81 @@
+
+/* ********************************* */
+/* mediaqueries para todas las páginas*/
+/* ********************************* */
+
+/* punto ruptura 1100px */
+@media screen and (max-width: 1100px) {
+	
+	/* header y navegación */
+
+	.botonMenu{
+		display:inline-block;
+		align-self: center;
+	}
+
+	.navegacion-principal{
+		display: none;
+	} 
+ 
+} /* FIN punto ruptura 1100px */
+
+/* punto ruptura 850px */
+@media screen and (max-width: 850px) {
+
+	/* estructura */
+	.anchoMaximo {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	/* header principal */
+	.Personaje{
+		display: none;
+	}
+
+	.header-bottom > .grid {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		text-align: center;
+	}
+
+	.header-bottom h1{
+		margin-bottom: 10px;
+		font-size: 2.2em;
+	}
+	.header-bottom p{
+		width: auto;
+		font-size: 1.1em;
+	}
+	 /* secciones */
+
+	 .productos > .grid {
+		grid-template-columns: 1fr;
+		column-gap: 50px;
+		row-gap: 30px;
+	}
+
+	.productos h2{
+		font-size: 1.7em;
+	}
+
+	/* footer principal */
+
+	.footerPrincipal > .grid {
+		grid-template-columns: 1fr;
+		row-gap: 30px;
+		text-align: center;
+	}
+
+	.footer-redes.grid {
+		justify-content: center;
+		order:-1;
+	}
+
+	.footer-redes img{
+		width: 55px;
+	}
+
+} /* FIN punto ruptura 850px */
+
+
